@@ -4,9 +4,7 @@ from turtle import Turtle
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
-
         self.color('white')
-        # self.shape('square')
         self.score = 0
         self.clear()
         self.penup()
@@ -27,5 +25,3 @@ class Scoreboard(Turtle):
         self.goto(0, 0)
         self.color('red')
         self.write(f"GAME OVER", False, 'center', ("Roboto", 24, 'normal'))
-
-

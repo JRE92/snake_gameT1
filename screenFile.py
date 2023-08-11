@@ -20,6 +20,3 @@ class ScreenC:
 
     def push_key(self, fun, key):
         self.screen.onkey(fun, key)
-
-    # def pushing(self):
-    #     return self.screen.onkey(None, "w")
