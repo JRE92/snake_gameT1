@@ -1,5 +1,5 @@
 import time
-from screenFile import ScreenC
+from screenFile import ScreenC  
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
@@ -33,7 +33,8 @@ while game_is_on:
         screen.update_screen()
         game_is_on = False
 
-    if snk.snake_blank[0].xcor() > 280 or snk.snake_blank[0].xcor() < -280 or snk.snake_blank[0].ycor() > 280 or \
+    if snk.snake_blank[0].xcor() > 280 or snk.snake_blank[0].xcor() < -280 or \
+            snk.snake_blank[0].ycor() > 280 or \
             snk.snake_blank[0].ycor() < -280:
         food.game_over()
         write.game_over()
